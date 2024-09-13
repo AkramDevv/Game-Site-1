@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKROGamia</title>
+    <link rel="stylesheet" href="AKROGamia.css">
+</head>
+<body>
+    <header >
+        <div id="logo">
+            <img src="AKROGamiaLogo.png" alt="">
+        </div>
+
+        <div class="search_container">
+            <input type="text" class="search_input" placeholder="Search by heart...">
+            <button class="search_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 20L15.8033 15.8033C15.8033 15.8033 14 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5C18 11.0137 17.9484 11.5153 17.85 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+        </div>
+
+        <div class="header_user" >
+            <ul class="header_user_list">
+                <li class="user_profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 16 16" fill="#000000"><path d="M16 7.992C16 3.58 12.416 0 8 0S0 3.58 0 7.992c0 2.43 1.104 4.62 2.832 6.09.016.016.032.016.032.032.144.112.288.224.448.336.08.048.144.111.224.175A7.98 7.98 0 0 0 8.016 16a7.98 7.98 0 0 0 4.48-1.375c.08-.048.144-.111.224-.16.144-.111.304-.223.448-.335.016-.016.032-.016.032-.032 1.696-1.487 2.8-3.676 2.8-6.106zm-8 7.001c-1.504 0-2.88-.48-4.016-1.279.016-.128.048-.255.08-.383a4.17 4.17 0 0 1 .416-.991c.176-.304.384-.576.64-.816.24-.24.528-.463.816-.639.304-.176.624-.304.976-.4A4.15 4.15 0 0 1 8 10.342a4.185 4.185 0 0 1 2.928 1.166c.368.368.656.8.864 1.295.112.288.192.592.24.911A7.03 7.03 0 0 1 8 14.993zm-2.448-7.4a2.49 2.49 0 0 1-.208-1.024c0-.351.064-.703.208-1.023.144-.32.336-.607.576-.847.24-.24.528-.431.848-.575.32-.144.672-.208 1.024-.208.368 0 .704.064 1.024.208.32.144.608.336.848.575.24.24.432.528.576.847.144.32.208.672.208 1.023 0 .368-.064.704-.208 1.023a2.84 2.84 0 0 1-.576.848 2.84 2.84 0 0 1-.848.575 2.715 2.715 0 0 1-2.064 0 2.84 2.84 0 0 1-.848-.575 2.526 2.526 0 0 1-.56-.848zm7.424 5.306c0-.032-.016-.048-.016-.08a5.22 5.22 0 0 0-.688-1.406 4.883 4.883 0 0 0-1.088-1.135 5.207 5.207 0 0 0-1.04-.608 2.82 2.82 0 0 0 .464-.383 4.2 4.2 0 0 0 .624-.784 3.624 3.624 0 0 0 .528-1.934 3.71 3.71 0 0 0-.288-1.47 3.799 3.799 0 0 0-.816-1.199 3.845 3.845 0 0 0-1.2-.8 3.72 3.72 0 0 0-1.472-.287 3.72 3.72 0 0 0-1.472.288 3.631 3.631 0 0 0-1.2.815 3.84 3.84 0 0 0-.8 1.199 3.71 3.71 0 0 0-.288 1.47c0 .352.048.688.144 1.007.096.336.224.64.4.927.16.288.384.544.624.784.144.144.304.271.48.383a5.12 5.12 0 0 0-1.04.624c-.416.32-.784.703-1.088 1.119a4.999 4.999 0 0 0-.688 1.406c-.016.032-.016.064-.016.08C1.776 11.636.992 9.91.992 7.992.992 4.14 4.144.991 8 .991s7.008 3.149 7.008 7.001a6.96 6.96 0 0 1-2.032 4.907z"/></svg>
+                </li>
+
+                <li class="user_favorites">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="40px" width="40px" version="1.1" id="Capa_1" viewBox="0 0 294.843 294.843" xml:space="preserve">
+                        <g>
+                            <path d="M199.628,175.487c-0.632-1.977,0.067-4.131,1.741-5.358l37.422-27.455c5.958-4.371,8.333-11.736,6.049-18.763   c-2.283-7.028-8.533-11.591-15.922-11.625l-46.413-0.215c-2.076-0.01-3.908-1.34-4.558-3.311l-14.547-44.076   c-2.316-7.017-8.586-11.55-15.975-11.551h0c-7.389,0-13.66,4.534-15.976,11.55l-6.557,19.859c-1.039,3.146,0.669,6.54,3.816,7.578   c3.147,1.041,6.539-0.669,7.579-3.816l6.557-19.859c1.014-3.073,3.762-3.312,4.581-3.312c0.818,0,3.566,0.239,4.58,3.312   l14.547,44.077c2.27,6.875,8.658,11.516,15.897,11.55l46.413,0.215c3.236,0.015,4.313,2.555,4.565,3.333   c0.253,0.778,0.875,3.465-1.734,5.379l-37.423,27.455c-5.837,4.283-8.277,11.793-6.072,18.689l14.143,44.222   c0.986,3.083-1.097,4.892-1.759,5.372c-0.662,0.481-3.025,1.904-5.652,0.013l-37.677-27.114c-5.878-4.229-13.776-4.229-19.654,0   l-37.684,27.119c-2.627,1.89-4.991,0.468-5.652-0.012c-0.662-0.481-2.745-2.289-1.76-5.371l14.139-44.229   c2.205-6.895-0.236-14.405-6.072-18.688l-37.421-27.455c-2.609-1.914-1.987-4.602-1.734-5.379c0.253-0.778,1.33-3.318,4.565-3.333   l46.416-0.215c3.313-0.016,5.987-2.714,5.972-6.028c-0.016-3.304-2.699-5.972-6-5.972c-0.009,0-0.019,0-0.028,0l-46.416,0.215   c-7.389,0.034-13.639,4.597-15.922,11.625c-2.283,7.028,0.091,14.393,6.048,18.764l37.421,27.455   c1.673,1.228,2.373,3.381,1.741,5.358l-14.138,44.229c-2.25,7.038,0.159,14.392,6.137,18.734c3,2.179,6.442,3.269,9.886,3.269   c3.419,0,6.84-1.075,9.829-3.225l37.683-27.119c1.685-1.213,3.95-1.213,5.635,0l37.677,27.114c5.998,4.316,13.736,4.3,19.715-0.044   c5.979-4.343,8.387-11.697,6.136-18.736L199.628,175.487z"/>
+                            <path d="M147.421,0C66.133,0,0,66.133,0,147.421s66.133,147.421,147.421,147.421c3.313,0,6-2.687,6-6s-2.687-6-6-6   C72.75,282.843,12,222.093,12,147.421S72.75,12,147.421,12s135.421,60.75,135.421,135.421c0,46.48-23.42,89.182-62.65,114.228   c-2.793,1.783-3.612,5.493-1.829,8.286c1.783,2.793,5.492,3.612,8.286,1.829c42.7-27.262,68.193-73.745,68.193-124.342   C294.843,66.133,228.71,0,147.421,0z"/>
+                        </g>
+                        </svg>
+                </li>
+
+                <li class="user_basket">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M495.432,171.027h-118.96L294.859,29.669c-3.354-5.812-8.771-9.967-15.252-11.703c-6.481-1.737-13.25-0.845-19.062,2.51    c-1.663,0.96-3.171,2.106-4.546,3.38c-1.374-1.274-2.883-2.42-4.546-3.38c-5.81-3.355-12.58-4.247-19.06-2.51    c-6.481,1.737-11.898,5.893-15.252,11.703l-81.613,141.358H16.568C7.432,171.027,0,178.459,0,187.595v42.756    c0,9.136,7.432,16.568,16.568,16.568h1.068l14.94,216.629c1.213,17.581,15.967,31.354,33.591,31.354h379.667    c17.623,0,32.378-13.772,33.591-31.354l14.94-216.629h1.068c9.136,0,16.568-7.432,16.568-16.568v-42.756    C512,178.459,504.568,171.027,495.432,171.027z M264.33,39.875c0.627-2.343,2.131-4.302,4.233-5.516    c1.4-0.808,2.953-1.222,4.528-1.222c0.789,0,1.584,0.104,2.367,0.313c2.344,0.628,4.303,2.131,5.517,4.234l85.511,148.109    c2.504,4.34,1.013,9.906-3.325,12.411c-2.101,1.214-4.551,1.536-6.894,0.909c-2.344-0.628-4.303-2.131-5.517-4.234l-85.511-148.11    C264.024,44.667,263.701,42.22,264.33,39.875z M256,62.838l62.463,108.188H193.537L256,62.838z M145.515,185.795l85.511-148.11    c1.213-2.101,3.172-3.605,5.517-4.233c2.345-0.627,4.793-0.306,6.894,0.909c2.101,1.213,3.605,3.172,4.233,5.517    c0.629,2.344,0.306,4.792-0.907,6.894l-85.511,148.11c-1.213,2.102-3.172,3.605-5.517,4.233c-2.344,0.627-4.793,0.306-6.894-0.909    C144.502,195.701,143.01,190.133,145.515,185.795z M495.967,230.35c0,0.294-0.239,0.534-0.534,0.534h-34.205    c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h17.065l-14.864,215.526c-0.635,9.21-8.364,16.424-17.595,16.424    H66.167c-9.231,0-16.96-7.214-17.595-16.424L33.708,246.918h393.315c4.427,0,8.017-3.589,8.017-8.017s-3.589-8.017-8.017-8.017    H16.568c-0.295,0-0.534-0.24-0.534-0.534v-42.756c0-0.294,0.239-0.534,0.534-0.534h111.915    c-1.273,9.766,3.293,19.808,12.34,25.031c3.87,2.235,8.165,3.377,12.518,3.377c2.182,0,4.378-0.288,6.543-0.868    c6.481-1.736,11.898-5.893,15.252-11.703l9.143-15.837h143.439l9.143,15.837c3.354,5.812,8.771,9.967,15.252,11.703    c2.165,0.58,4.36,0.868,6.543,0.868c4.353,0,8.648-1.142,12.519-3.377c9.047-5.224,13.613-15.265,12.34-25.031h111.916    c0.295,0,0.534,0.24,0.534,0.534V230.35z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M273.102,324.947c-4.427,0-8.017,3.589-8.017,8.017v94.063c0,5.01-4.076,9.086-9.086,9.086s-9.086-4.076-9.086-9.086    V298.759c0-5.01,4.076-9.086,9.086-9.086s9.086,4.076,9.086,9.086c0,4.427,3.589,8.017,8.017,8.017s8.017-3.589,8.017-8.017    c0-13.851-11.268-25.119-25.119-25.119s-25.119,11.268-25.119,25.119v128.267c0,13.851,11.268,25.119,25.119,25.119    s25.119-11.268,25.119-25.119v-94.063C281.119,328.537,277.53,324.947,273.102,324.947z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M341.511,324.947c-4.427,0-8.017,3.589-8.017,8.017v94.063c0,5.01-4.076,9.086-9.086,9.086    c-5.01,0-9.086-4.076-9.086-9.086V298.759c0-5.01,4.076-9.086,9.086-9.086c5.01,0,9.086,4.076,9.086,9.086    c0,4.427,3.589,8.017,8.017,8.017s8.017-3.589,8.017-8.017c0-13.851-11.268-25.119-25.119-25.119    c-13.851,0-25.119,11.268-25.119,25.119v128.267c0,13.851,11.268,25.119,25.119,25.119c13.851,0,25.119-11.268,25.119-25.119    v-94.063C349.528,328.537,345.939,324.947,341.511,324.947z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M409.921,324.947c-4.427,0-8.017,3.589-8.017,8.017v94.063c0,5.01-4.076,9.086-9.086,9.086    c-5.01,0-9.086-4.076-9.086-9.086V298.759c0-5.01,4.076-9.086,9.086-9.086c5.01,0,9.086,4.076,9.086,9.086    c0,4.427,3.589,8.017,8.017,8.017c4.427,0,8.017-3.589,8.017-8.017c0-13.851-11.268-25.119-25.119-25.119    c-13.851,0-25.119,11.268-25.119,25.119v128.267c0,13.851,11.268,25.119,25.119,25.119c13.851,0,25.119-11.268,25.119-25.119    v-94.063C417.937,328.537,414.348,324.947,409.921,324.947z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M136.284,324.947c-4.427,0-8.017,3.589-8.017,8.017v94.063c0,5.01-4.076,9.086-9.086,9.086s-9.086-4.076-9.086-9.086    V298.759c0-5.01,4.076-9.086,9.086-9.086s9.086,4.076,9.086,9.086c0,4.427,3.589,8.017,8.017,8.017s8.017-3.589,8.017-8.017    c0-13.851-11.268-25.119-25.119-25.119s-25.119,11.268-25.119,25.119v128.267c0,13.851,11.268,25.119,25.119,25.119    s25.119-11.268,25.119-25.119v-94.063C144.301,328.537,140.711,324.947,136.284,324.947z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M204.693,324.947c-4.427,0-8.017,3.589-8.017,8.017v94.063c0,5.01-4.076,9.086-9.086,9.086s-9.086-4.076-9.086-9.086    V298.759c0-5.01,4.076-9.086,9.086-9.086s9.086,4.076,9.086,9.086c0,4.427,3.589,8.017,8.017,8.017s8.017-3.589,8.017-8.017    c0-13.851-11.268-25.119-25.119-25.119s-25.119,11.268-25.119,25.119v128.267c0,13.851,11.268,25.119,25.119,25.119    s25.119-11.268,25.119-25.119v-94.063C212.71,328.537,209.12,324.947,204.693,324.947z"/>
+                            </g>
+                        </g>
+                        </svg>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav >
+        <div class="navbar" id="navbar">
+            <ul class="navbar_list" >
+                <li class="home">
+                    <span class="home_button">
+                        <a href="#home">
+                            <b>Click</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="32px" viewBox="-1 0 19 19" version="1.1">
+    
+                            <title>home [#1393]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+                        
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-341.000000, -720.000000)" fill="black">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M299.875,576.21213 C299.875,576.76413 299.399,577.00013 298.8125,577.00013 L297.75,577.00013 C297.1635,577.00013 296.6875,576.76413 296.6875,576.21213 L296.6875,575.21213 C296.6875,574.10713 295.736562,573.00013 294.5625,573.00013 L292.4375,573.00013 C291.263438,573.00013 290.3125,574.10713 290.3125,575.21213 L290.3125,576.21213 C290.3125,576.76413 289.8365,577.00013 289.25,577.00013 L288.1875,577.00013 C287.601,577.00013 287.125,576.76413 287.125,576.21213 L287.125,568.14913 C287.125,568.01613 287.181312,567.88913 287.280125,567.79513 L292.738188,562.65913 C293.153625,562.26813 293.826188,562.26813 294.240563,562.65913 L299.719875,567.81513 C299.818688,567.90913 299.875,568.03613 299.875,568.16813 L299.875,576.21213 Z M302,567.62513 C302,567.36013 301.888438,567.10713 301.690812,566.91913 L294.998125,560.58913 C294.169375,559.80613 292.823188,559.80313 291.99125,560.58313 L285.312375,566.84813 C285.112625,567.03613 285,567.29013 285,567.55613 L285,577.21213 C285,578.31713 285.950938,579.00013 287.125,579.00013 L290.3125,579.00013 C291.486562,579.00013 292.4375,578.31713 292.4375,577.21213 L292.4375,576.21213 C292.4375,575.66013 292.9135,575.21213 293.5,575.21213 C294.0865,575.21213 294.5625,575.66013 294.5625,576.21213 L294.5625,577.21213 C294.5625,578.31713 295.513438,579.00013 296.6875,579.00013 L299.875,579.00013 C301.049062,579.00013 302,578.31713 302,577.21213 L302,567.62513 Z" id="home-[#1393]">
+                        
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </a>
+                        <span class="home_button_cover"></span>
+                    </span>
+                    <span class="home_front">
+                        <p>Home</p>
+                    </span>
+                </li>
+                <li class="about">
+                    <span class="about_button">
+                        <a href="#about">
+                            <b>Click</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="40px" height="32px" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1"><path d="M26,52A26,26,0,0,1,22.88.19,25.78,25.78,0,0,1,34.73,1.5a2,2,0,1,1-1.35,3.77,22,22,0,0,0-21,38,22,22,0,0,0,35.41-20,2,2,0,1,1,4-.48A26,26,0,0,1,26,52Z"/><path d="M26,43.86a2,2,0,0,1-2-2V22.66a2,2,0,1,1,4,0v19.2A2,2,0,0,1,26,43.86Z"/><circle cx="26" cy="15.71" r="2.57"/></svg>
+                        </a>
+                        <span class="about_button_cover"></span>
+                    </span>
+                    <span class="about_front">
+                        <p>About</p>
+                    </span>
+                </li>
+                <li class="contact">
+                    <span class="contact_button">
+                        <a href="#contact">
+                            <b>Click</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" width="40px" height="32px" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+
+                                <g id="_x32_5_attachment"/>
+                                
+                                <g id="_x32_4_office"/>
+                                
+                                <g id="_x32_3_pin"/>
+                                
+                                <g id="_x32_2_business_card"/>
+                                
+                                <g id="_x32_1_form"/>
+                                
+                                <g id="_x32_0_headset">
+                                
+                                <g>
+                                
+                                <path d="M63,40.2202c0-5.9472-3.9073-10.9949-9.2881-12.7225v-6.0148c0-10.5703-10.1641-19.8423-21.752-19.8423    s-21.752,9.272-21.752,19.8423v6.0442C4.8693,29.2792,1,34.303,1,40.2202C1,47.5884,6.9941,53.583,14.3623,53.583h3.6738    c1.9336,0,3.5059-1.5728,3.5059-3.5059v-19.71c0-1.8768-1.4827-3.4017-3.3359-3.4926v-5.1373    c0-6.0151,5.8818-12.7432,13.7539-12.7432c7.8701,0,13.75,6.728,13.75,12.7432v5.1458c-1.8132,0.1329-3.252,1.636-3.252,3.4841    v19.71c0,1.9331,1.5723,3.5059,3.5059,3.5059h2.6728l-0.0048,4.5596h-5.6547c-0.3737-1.429-1.6642-2.4917-3.2086-2.4917h-2.0977    c-1.835,0-3.3281,1.4932-3.3281,3.3281s1.4932,3.3281,3.3281,3.3281h2.0977c1.4242,0,2.6327-0.9039,3.1068-2.1646h6.7556    c0.5518,0,0.999-0.4473,1-0.999l0.0059-5.6111C57.5385,53.0181,63,47.2512,63,40.2202z M39.7686,60.3071h-2.0977    c-0.7324,0-1.3281-0.5957-1.3281-1.3281s0.5957-1.3281,1.3281-1.3281h2.0977c0.7324,0,1.3281,0.5957,1.3281,1.3281    S40.501,60.3071,39.7686,60.3071z M13.3623,51.5396C7.5635,51.0313,3,46.1489,3,40.2202s4.5635-10.811,10.3623-11.3193V51.5396z     M19.542,30.3672v19.71c0,0.8306-0.6758,1.5059-1.5059,1.5059h-2.6738V28.8574h2.6738    C18.8662,28.8574,19.542,29.5347,19.542,30.3672z M31.96,6.9941c-8.2451,0-15.7539,7.0273-15.7539,14.7432v5.1201h-1.8438    c-0.735,0-1.4512,0.0753-2.1543,0.19v-5.5645c0-9.5049,9.2295-17.8423,19.752-17.8423s19.752,8.3374,19.752,17.8423v5.5522    c-0.6778-0.1064-1.3671-0.1777-2.0742-0.1777H47.71v-5.1201C47.71,14.0215,40.2031,6.9941,31.96,6.9941z M44.458,50.0771v-19.71    c0-0.8325,0.6758-1.5098,1.5059-1.5098h2.6738V51.583h-2.6738C45.1338,51.583,44.458,50.9077,44.458,50.0771z M50.6377,51.5396    V28.9009C56.4365,29.4092,61,34.2915,61,40.2202S56.4365,51.0313,50.6377,51.5396z"/>
+                                
+                                </g>
+                                
+                                </g>
+                                
+                                <g id="_x31_9_video_call"/>
+                                
+                                <g id="_x31_8_letter_box"/>
+                                
+                                <g id="_x31_7_papperplane"/>
+                                
+                                <g id="_x31_6_laptop"/>
+                                
+                                <g id="_x31_5_connection"/>
+                                
+                                <g id="_x31_4_phonebook"/>
+                                
+                                <g id="_x31_3_classic_telephone"/>
+                                
+                                <g id="_x31_2_sending_mail"/>
+                                
+                                <g id="_x31_1_man_talking"/>
+                                
+                                <g id="_x31_0_date"/>
+                                
+                                <g id="_x30_9_review"/>
+                                
+                                <g id="_x30_8_email"/>
+                                
+                                <g id="_x30_7_information"/>
+                                
+                                <g id="_x30_6_phone_talking"/>
+                                
+                                <g id="_x30_5_women_talking"/>
+                                
+                                <g id="_x30_4_calling"/>
+                                
+                                <g id="_x30_3_women"/>
+                                
+                                <g id="_x30_2_writing"/>
+                                
+                                <g id="_x30_1_chatting"/>
+                                
+                                </svg>
+                        </a>
+                        <span class="contact_button_cover"></span>
+                    </span>
+                    <span class="contact_front">
+                        <p>Contact</p>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <main>
+            <div class="flex_box">
+                <a href="#navbar"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" fill="none">
+                    <path d="M17 15L12 10L7 15" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+            </div>
+            <p class="top_p">Popular and latest Games</p>
+            <div class="games">
+                
+                <div class="game_1">
+                    <img src="elden_ring_front_img.png" alt="" width="200px" height="200px">
+                    <b>Elden Ring Shadow of the Erdtree Edition</b>
+                    <p class="category_about">Action Game</p>
+                    <a class="front_download_click" href="page1.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: June 20, 2024</p>
+                    <div class="game_popup">
+                        <b>Elden Ring Shadow of the Erdtree Edition</b>
+                        <p class="popup_content">
+                            Winner of hundreds of accolades including The Game Awards Game of the Year.
+                        </p>
+                        <img src="elden_ring.gif" alt="">
+                        <img src="elden_ring_popup_img.jpg" alt="">
+                    </div> 
+                </div>
+
+                <div class="game_2">
+                    <img src="helldivers2.png" alt="" width="200px" height="200px">
+                    <b>Helldivers 2</b>
+                    <p class="genre_about">Third-person shooter</p>
+                    <a class="front_download_click" href="page2.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: February 8, 2024</p>
+                    <div class="game_popup">
+                        <b>Helldivers 2</b>
+                        <p>Helldivers 2 is a 2024 cooperative third-person shooter game developed by Arrowhead Game Studios.</p>
+                        <img src="helldivers_2.gif" alt="">
+                        <img src="Helldivers_2_img.jpg" alt="">
+                        
+                    </div>
+                </div>
+
+                <div class="game_3">
+                    <img src="dragos_dogma_2.jpg" alt="" width="200px" height="200px">
+                    <b>Dragon's Dogma 2</b>
+                    <p class="genre_about">Action role-playing game, Adventure game, Fighting game</p>
+                    <a class="front_download_click" href="page3.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: March 22, 2024</p>
+                    <div class="game_popup">
+                        <b>Dragon's Dogma 2</b>
+                        <p>Embark on your grand adventure, Arisen!
+                            Dragon's Dogma is a single-player, story-driven action RPG ...</p>
+                        <img src="dragons_dogma.gif" alt="">
+                        <img src="dragon's_dogma2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="game_4">
+                    <img src="tekken8.jpg" alt="" width="200px" height="200px">
+                    <b>Tekken 8</b>
+                    <p class="genre_about">Action game</p>
+                    <a class="front_download_click" href="page4.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: January 26, 2024</p>
+                    <div class="game_popup">
+                        <b>Tekken 8</b>
+                        <p>GET READY FOR TEKKEN 8, THE NEW EPISODE OF THE LEGENDARY FIGHTING GAME SERIES.</p>
+                        <a href="https://www.youtube.com/watch?v=_MM4clV2qjE" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="white">
+                            <path d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        <p>Watch trailer</p></a>
+                        <img src="tekken_8.jpg" alt="">
+                        <img src="Tekken8.gif" alt="">
+                    </div>
+                </div>
+
+                <div class="game_5">
+                    <img src="senuas_saga.jpg" alt="" width="200px" height="200px">
+                    <b>Senua’s Saga: Hellblade II</b>
+                    <p class="genre_about">Action game</p>
+                    <a class="front_download_click" href="page5.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: May 21, 2024</p>
+                    <div class="game_popup">
+                        <b>Senua’s Saga: Hellblade II</b>
+                        <p>In the sequel to the award-winning Hellblade: Senua's Sacrifice, Senua fights for survival in the ...</p>
+                        <a href="https://youtu.be/qJWI4bkD9ZM?si=ev_gjBb7gsPATGyW" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="white">
+                            <path d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        <p>Watch trailer</p></a>
+                        <img src="senuas.jpg" alt="">
+                        <img src="senuas1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="game_6">
+                    <img src="wukong0.jpg" alt="" width="200px" height="200px">
+                    <b>Black Myth: Wukong</b>
+                    <p class="genre_about">Action game</p>
+                    <a class="front_download_click" href="page6.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: August 20, 2024</p>
+                    <div class="game_popup">
+                        <b>Black Myth: Wukong</b>
+                        <p>Black Myth: Wukong is an action RPG inspired by Chinese mythology.</p>
+                        <img src="wukong.jpg" alt="">
+                        <img src="wukong1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="game_7">
+                    <img src="star_wars.png" alt="" width="200px" height="200px">
+                    <b>Star Wars Outlaws</b>
+                    <p class="genre_about">Action-adventure game</p>
+                    <a class="front_download_click" href="page7.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: August 30, 2024</p>
+                    <div class="game_popup">
+                        <b>Star Wars Outlaws</b>
+                        <p>Live the high-stakes lifestyle of an outlaw.</p>
+                        <img src="starWars.gif" alt="">
+                        <img src="starWars.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="game_8">
+                    <img src="ark2_0.jpg" alt="" width="200px" height="200px">
+                    <b>ARK 2</b>
+                    <p class="genre_about">Action game</p>
+                    <a class="front_download_click" href="page8.html" target="_blank">Click for download</a>
+                    <p class="release_date">Release Date: To be announced</p>
+                    <div class="game_popup">
+                        <b>ARK 2</b>
+                        <p>Survive in the past. Tame the future.</p>
+                        <a href="https://youtu.be/QdItfIRGdA4?si=0T7sI5ce4RmCrOmi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="white">
+                            <path d="M3 12L3 18.9671C3 21.2763 5.53435 22.736 7.59662 21.6145L10.7996 19.8727M3 8L3 5.0329C3 2.72368 5.53435 1.26402 7.59661 2.38548L20.4086 9.35258C22.5305 10.5065 22.5305 13.4935 20.4086 14.6474L14.0026 18.131" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        <p>Watch trailer</p></a>
+                        <img src="ark_2.jpg" alt="">
+                        <img src="ark.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bg_main"></div>
+        </main>
+
+        <aside>
+            <h2>Filter</h2>
+            <div class="genre_nav">
+                <h3>Genre</h3>
+                <ul>
+                    <li>Action</li>
+                    <li>Adventure</li>
+                    <li>Card Game</li>
+                    <li>Educational</li>
+                    <li>Fighting</li>
+                    <li>Interactive Fiction</li>
+                    <li>Platformer</li>
+                    <li>Puzzle</li>
+                    <li>Racing</li>
+                    <li>Rhythm</li>
+                    <li>Role Playing</li>
+                    <li>Shooter</li>
+                    <li>Simulation</li>
+                    <li>Sports</li>
+                    <li>Strategy</li>
+                    <li>Survival</li>
+                    <li>Visual Novel</li>
+                    <li>Other</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+    <section id="about">
+        <article>
+            <h1>About Us</h1>
+            <h2>Welcome to AKROGamia!</h2>
+            <p>
+                We are passionate gamers and developers dedicated to bringing you the latest and greatest in the world of online gaming. Our mission is to provide a platform where gamers of all ages can find, play, and enjoy a wide variety of games, from classic favorites to the newest releases.
+            </p>
+            <h2>Our Story</h2>
+            <p>
+                AKROGamia was founded in 2024 by a group of enthusiastic gamers who wanted to create a space where people could discover and share their love for games. Over the years, we have grown into a vibrant community of players and developers who are committed to pushing the boundaries of online gaming.
+            </p>
+            <h2>What we Offer</h2>
+            <ul>
+                <li> <strong>Wide Range of Games:</strong><p>From action-packed shooters to relaxing puzzles, we have something for everyone.</p></li>
+                <li> <strong>Community Features:</strong> <p>Join our forums, participate in events, and connect with other gamers from around the world.</p></li>
+                <li> <strong>Regular Updates:</strong> <p>We are constantly updating our library with the latest games and features to ensure you always have something new to explore.</p></li>
+            </ul>
+            <h2>Join Us</h2>
+            <p>Whether you are a casual gamer or a hardcore enthusiast, AKROGamia is the perfect place for you. Join our community today and start your gaming adventure with us!</p>
+            <p>Thank you for visiting, and we hope you have a fantastic time here at AKROGamia</p>
+            <p class="happy_gaming">Happy Gaming!</p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feedback, or need support, please feel free to reach out to us using the form below or via our email at support@akrogamia.com. We are here to help you!</p>
+        <h2>Phone:</h2>
+        <p>+994-50-XXX-XX-XX</p>
+        <p>+994-55-XXX-XX-XX</p>
+        <p>+994-70-XXX-XX-XX</p>
+        <h2>Social Media:</h2>
+        <div class="social_media">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z" fill="#0F0F0F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z" fill="#0F0F0F"/>
+                        </svg>
+        </div>
+        <div class="rights">
+            <p>All Rights are Protected.</p>
+        </div>
+    </section>
+</body>
+</html>
